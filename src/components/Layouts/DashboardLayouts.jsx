@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from '../Elements/Navbar';
 import Sidebar from '../Elements/SideBar';
 
-const DashboardLayouts = ({ children }) => {
+const DashboardLayouts = (props) => {
+    const { children } = props;
     return (
         <div>
             <Navbar />
