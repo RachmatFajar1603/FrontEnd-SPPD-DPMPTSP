@@ -3,16 +3,19 @@ import InputForm from "../Elements/Input";
 
 const FormLogin = () => {
   return (
-    <form action="">
+    <form action="" className=" ">
       <InputForm
         label="Role"
         type="select"
         name="role"
         options={[
+          { value: "userBidang", label: "User Bidang" },
+          { value: "ppatk", label: "PPTK" },
+          { value: "keuangan", label: "Keuangan" },
           { value: "admin", label: "Admin" },
-          { value: "user", label: "User" },
           // Tambahkan opsi lainnya jika diperlukan
         ]}
+        placeholder="Pilih Role"
       />
 
       <InputForm label="NIP" type="number" placeholder="02123456" name="nip " />

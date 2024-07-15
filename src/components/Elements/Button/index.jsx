@@ -1,5 +1,5 @@
 const Button = (props) => {
-  const { children = "Login", classname = "bg-green-700" } = props;
+  const { children = "Login", classname = "bg-green-700"} = props;
 
   return (
     <button
