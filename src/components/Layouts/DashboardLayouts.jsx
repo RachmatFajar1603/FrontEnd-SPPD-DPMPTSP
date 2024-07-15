@@ -1,14 +1,15 @@
+import React from 'react';
+import Navbar from '../Elements/Navbar';
+import Sidebar from '../Elements/SideBar';
 
-import Navbar from "../Fragments/Navbar";
-
-
-const DashboardLayouts = ({children}) => {
+const DashboardLayouts = ({ children }) => {
     return (
-        <>
-        <Navbar/>
-        {children}
-        </>
+        <div>
+            <Navbar />
+            <Sidebar/>
+            {children}
+        </div>
     );
-}
+};
 
 export default DashboardLayouts;

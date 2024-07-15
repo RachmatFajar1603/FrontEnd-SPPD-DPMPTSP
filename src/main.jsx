@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LoginPage from './Pages/login.jsx'
 import ErrorPage from './Pages/404.jsx'
-import HomePage from './Pages/home.jsx'
+import DashboardPage from './Pages/dashboard.jsx'
+import FormPengajuan from './Pages/formPengajuan.jsx'
 
 const router = createBrowserRouter([
   {
@@ -16,8 +17,12 @@ const router = createBrowserRouter([
     element: <LoginPage/>,
   },
   {
-    path:'/home',
-    element:<HomePage/>
+    path: '/dashboard',
+    element: <DashboardPage/>,
+  },
+  {
+    path: '/formPengajuan',
+    element: <FormPengajuan/>,
   }
 ])
 
