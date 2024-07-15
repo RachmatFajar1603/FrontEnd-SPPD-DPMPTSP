@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../Elements/Button";
 import InputForm from "../Elements/Input";
 
@@ -26,7 +27,9 @@ const FormLogin = () => {
         name="password"
       />
 
-      <Button classname="bg-green-600 w-full">Login</Button>
+      <Link to="/dashboard">
+        <Button classname="bg-green-600 w-full">Login</Button>
+      </Link>
     </form>
   );
 };

@@ -5,7 +5,7 @@ const DashboardPage = () => {
   return (
     <div>
       <DashboardLayouts>
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center h-56 ">
           <Alert color="info">
             <span className="font-medium">Info alert!</span> Change a few things
             up and try submitting again.
