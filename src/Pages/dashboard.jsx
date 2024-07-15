@@ -1,11 +1,15 @@
 import DashboardLayouts from "../components/Layouts/DashboardLayouts";
+import { Alert } from "flowbite-react";
 
 const DashboardPage = () => {
   return (
     <div>
       <DashboardLayouts>
         <div className="flex justify-center items-center h-screen">
-          <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>
+          <Alert color="info">
+            <span className="font-medium">Info alert!</span> Change a few things
+            up and try submitting again.
+          </Alert>
         </div>
       </DashboardLayouts>
     </div>
